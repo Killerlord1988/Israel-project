@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,11 +12,39 @@
   <link rel="stylesheet" href="css/style.min.css">
   <link rel="shortcut icon" href="favicon/favicon.ico" type="image/x-icon">
   <title>Израиль</title>
-
 </head>
+
 <body>
-  <h1>Добро пожаловать в Лигу А.</h1>
+  <div style="display: none;">
+    <include src="build/img/sprite_auto.svg"></include>
+  </div>
+
+  <header class="header">
+
+    <picture>
+      <source media="(max-width: 767px)" srcset="img/bg-header-mobile@1x.png 1x, img/bg-header-mobile@2x.png 2x">
+      <img class="header__bg-header" src="img/bg-header-desktop@1x.png" srcset="img/bg-header-desktop@2x.png 2x"
+        alt="Израиль">
+    </picture>
+
+    <div class="header__top-block top-block container">
+      <a class="top-block__phone" href="tel:+(972)2–621–6581">+ (972) 2 – 621 – 6581</a>
+      <a class="top-block__logo-link" href="index.html">
+        <img class="top-block__logo-img" src="img/logo.png" alt="Логотип" width="137" height="48">
+      </a>
+      <a class="top-block__request-call" href="index.html">заказать звонок</a>
+    </div>
+    <div class="header__main-block main-block container">
+      <h1 class="main-block__title">Учёба, путешествие и карьера для еврейской молодёжи</h1>
+      <div class="main-block__mouse-border">
+        <div class="main-block__mouse-pointer">
+          <div class="main-block__img"></div>
+        </div>
+      </div>
+    </div>
+  </header>
 
   <script src="js/script.min.js"></script>
 </body>
+
 </html>
