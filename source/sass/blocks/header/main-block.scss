@@ -3,6 +3,7 @@
   align-items: center;
   flex-direction: column;
   margin-top: 32%;
+  margin-bottom: 15%;
 }
 
 .main-block__title {
@@ -52,12 +53,14 @@
 @media (max-width: $tablet-width) {
   .main-block {
     margin-top: 22%;
+    margin-bottom: 30%;
   }
 }
 
 @media (max-width: $mobile-width) {
   .main-block {
-    margin-top: 90%;
+    margin-top: 83%;
+    margin-bottom: 47%;
   }
 
   .main-block__title {

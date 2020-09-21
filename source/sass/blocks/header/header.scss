@@ -7,3 +7,9 @@
   position: absolute;
   z-index: -10;
 }
+
+@media (max-width: $mobile-width) {
+  .header {
+    padding-top: 32px;
+  }
+}
