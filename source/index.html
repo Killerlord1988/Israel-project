@@ -47,7 +47,9 @@
   <main class="main">
     <section class="about">
       <h2 class="about__title main__title container">О программе</h2>
-      <p class="about__text container">«Маса» — совместный проект правительства Израиля и Еврейского агентства Сохнут. Более 250 учебных программ (60 на русском) и возможность стажировки в Израиле. В течение освоения программ предусмотрен грант от 4200 до 8400$.</p>
+      <p class="about__text container">«Маса» — совместный проект правительства Израиля и Еврейского агентства Сохнут.
+        Более 250 учебных программ (60 на русском) и возможность стажировки в Израиле. В течение освоения программ
+        предусмотрен грант от 4200 до 8400$.</p>
       <div class="about__player">
 
         <picture>
@@ -57,13 +59,99 @@
         </picture>
 
         <div class="about__play-btn-border">
-        <div class="about__play-btn"></div>
+          <div class="about__play-btn">
+            <svg class="about__play-btn-img" width="15" height="19">
+              <use xlink:href="#icon-play"></use>
+            </svg>
+          </div>
+        </div>
       </div>
+    </section>
+
+    <section class="programs">
+      <h2 class="programs__title main__title container">программы</h2>
+      <input class="programs__btn programs__btn--general visually-hidden" type="radio" name="programs-toggle"
+        id="program-1" checked="checked">
+      <input class="programs__btn programs__btn--academic visually-hidden" type="radio" name="programs-toggle"
+        id="program-2">
+      <input class="programs__btn programs__btn--internships visually-hidden" type="radio" name="programs-toggle"
+        id="program-3">
+      <input class="programs__btn programs__btn--volunteering visually-hidden" type="radio" name="programs-toggle"
+        id="program-4">
+      <input class="programs__btn programs__btn--religious visually-hidden" type="radio" name="programs-toggle"
+        id="program-5">
+
+      <div class="programs__info-slider container">
+
+        <div class="programs__nav-wrapper">
+          <div class="programs__nav-menulimiter dragscroll">
+            <nav class="programs__nav">
+              <label class="programs__label" for="program-1">Общие</label>
+              <label class="programs__label" for="program-2">Академические</label>
+              <label class="programs__label" for="program-3">Стажировки</label>
+              <label class="programs__label" for="program-4">Волонтёрство</label>
+              <label class="programs__label" for="program-5">Религиозные</label>
+            </nav>
+          </div>
+        </div>
+
+        <div class="programs__info-list">
+          <div class="programs__info-block">
+            <h3 class="programs__info-title">Общие</h3>
+            <p class="programs__info-text">Провести семестр или год за рубежом, знакомясь с различными культурами и
+              идеями, традициями и стилем жизни — вот что такое учеба за границей! Израиль — это не только центр
+              религиозного мира, это также академический центр, живая лаборатория идей и творческого исследования.</p>
+              <p class="programs__info-text">Может быть, Вы заинтересованы в изучении социологии, мира, юриспруденции, биологии, сравнительной религии,
+              законодательного и делового администрирования или искусства? Здесь, в Израиле, Вы сможете
+              изучить все это в удивительной университетской среде.</p>
+          </div>
+          <div class="programs__info-block">
+            <h3 class="programs__info-title">Академические</h3>
+            <p class="programs__info-text">Провести семестр или год за рубежом, знакомясь с различными культурами и
+              идеями, традициями и стилем жизни — вот что такое учеба за границей! Израиль — это не только центр
+              религиозного мира, это также академический центр, живая лаборатория идей и творческого исследования.</p>
+              <p class="programs__info-text">Может быть, Вы заинтересованы в изучении социологии, мира, юриспруденции, биологии, сравнительной религии,
+              законодательного и делового администрирования или искусства? Здесь, в Израиле, Вы сможете
+              изучить все это в удивительной университетской среде.</p>
+          </div>
+          <div class="programs__info-block">
+            <h3 class="programs__info-title">Стажировки</h3>
+            <p class="programs__info-text">Провести семестр или год за рубежом, знакомясь с различными культурами и
+              идеями, традициями и стилем жизни — вот что такое учеба за границей! Израиль — это не только центр
+              религиозного мира, это также академический центр, живая лаборатория идей и творческого исследования.</p>
+              <p class="programs__info-text">Может быть, Вы заинтересованы в изучении социологии, мира, юриспруденции, биологии, сравнительной религии,
+              законодательного и делового администрирования или искусства? Здесь, в Израиле, Вы сможете
+              изучить все это в удивительной университетской среде.</p>
+          </div>
+          <div class="programs__info-block">
+            <h3 class="programs__info-title">Волонтёрство</h3>
+            <p class="programs__info-text">Провести семестр или год за рубежом, знакомясь с различными культурами и
+              идеями, традициями и стилем жизни — вот что такое учеба за границей! Израиль — это не только центр
+              религиозного мира, это также академический центр, живая лаборатория идей и творческого исследования.</p>
+              <p class="programs__info-text">Может быть, Вы заинтересованы в изучении социологии, мира, юриспруденции, биологии, сравнительной религии,
+              законодательного и делового администрирования или искусства? Здесь, в Израиле, Вы сможете
+              изучить все это в удивительной университетской среде.</p>
+          </div>
+          <div class="programs__info-block">
+            <h3 class="programs__info-title">Религиозные</h3>
+            <p class="programs__info-text">Провести семестр или год за рубежом, знакомясь с различными культурами и
+              идеями, традициями и стилем жизни — вот что такое учеба за границей! Израиль — это не только центр
+              религиозного мира, это также академический центр, живая лаборатория идей и творческого исследования.</p>
+              <p class="programs__info-text">Может быть, Вы заинтересованы в изучении социологии, мира, юриспруденции, биологии, сравнительной религии,
+              законодательного и делового администрирования или искусства? Здесь, в Израиле, Вы сможете
+              изучить все это в удивительной университетской среде.</p>
+          </div>
+
+
+        </div>
       </div>
+
+
     </section>
   </main>
 
   <script src="js/script.min.js"></script>
+  <script src="js/dragscroll.min.js"></script>
 </body>
 
 </html>
