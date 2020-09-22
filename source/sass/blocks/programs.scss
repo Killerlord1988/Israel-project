@@ -1,0 +1,160 @@
+.programs {
+  background-image: url("../img/bg-sketch-program.png");
+  background-size: 680px auto;
+  background-repeat: no-repeat;
+  background-position: right 0;
+}
+
+.programs__title {
+  text-align: left;
+  padding-top: 48px;
+  margin-bottom: 83px;
+}
+
+.programs__info-slider {
+  display: flex;
+}
+
+.programs__nav {
+  display: flex;
+  flex-direction: column;
+  width: 230px;
+}
+
+.programs__label {
+  position: relative;
+  font-size: 15px;
+  line-height: 18px;
+  opacity: 0.87;
+  padding-left: 72px;
+  padding-right: 11px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  user-select: none;
+  cursor: pointer;
+}
+
+.programs__label[for="program-1"]::before,
+.programs__label[for="program-2"]::before,
+.programs__label[for="program-3"]::before,
+.programs__label[for="program-4"]::before,
+.programs__label[for="program-5"]::before {
+  position: absolute;
+  content: "";
+
+  left: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.programs__label[for="program-1"]::before {
+  width: 28px;
+  height: 33px;
+  background: url("../img/css_sprites.png") -10px -120px;
+}
+
+.programs__btn--general:checked ~ .programs__info-slider .programs__label[for="program-1"]::before {
+  background: url("../img/css_sprites.png") -106px -120px;
+}
+
+.programs__label[for="program-2"]::before {
+  width: 36px;
+  height: 35px;
+  background: url("../img/css_sprites.png") -66px -10px;
+}
+
+.programs__btn--academic:checked ~ .programs__info-slider .programs__label[for="program-2"]::before {
+  background: url("../img/css_sprites.png") -10px -65px;
+}
+
+.programs__label[for="program-3"]::before {
+  width: 32px;
+  height: 25px;
+  background: url("../img/css_sprites.png") -174px -100px;
+}
+
+.programs__btn--internships:checked ~ .programs__info-slider .programs__label[for="program-3"]::before {
+  background: url("../img/css_sprites.png") -174px -55px;
+}
+
+.programs__label[for="program-4"]::before {
+  width: 32px;
+  height: 29px;
+  background: url("../img/css_sprites.png") -122px -59px;
+}
+
+.programs__btn--volunteering:checked ~ .programs__info-slider .programs__label[for="program-4"]::before {
+  background: url("../img/css_sprites.png") -122px -10px;
+}
+
+.programs__label[for="program-5"]::before {
+  width: 23px;
+  height: 25px;
+  background: url("../img/css_sprites.png") -96px -173px;
+}
+
+.programs__btn--religious:checked ~ .programs__info-slider .programs__label[for="program-5"]::before {
+  background: url("../img/css_sprites.png") -53px -173px;
+}
+
+.programs__btn--general:checked ~ .programs__info-slider .programs__label[for="program-1"],
+.programs__btn--academic:checked ~ .programs__info-slider .programs__label[for="program-2"],
+.programs__btn--internships:checked ~ .programs__info-slider .programs__label[for="program-3"],
+.programs__btn--volunteering:checked ~ .programs__info-slider .programs__label[for="program-4"],
+.programs__btn--religious:checked ~ .programs__info-slider .programs__label[for="program-5"] {
+  background: $color-yellow-gradient;
+  color: $color-white;
+  text-transform: uppercase;
+}
+
+.programs__btn--general:checked ~ .programs__info-slider .programs__label[for="program-1"]::after,
+.programs__btn--academic:checked ~ .programs__info-slider .programs__label[for="program-2"]::after,
+.programs__btn--internships:checked ~ .programs__info-slider .programs__label[for="program-3"]::after,
+.programs__btn--volunteering:checked ~ .programs__info-slider .programs__label[for="program-4"]::after,
+.programs__btn--religious:checked ~ .programs__info-slider .programs__label[for="program-5"]::after {
+  position: absolute;
+  content: "";
+  right: -34px;
+  top: 50%;
+  transform: translateY(-50%);
+  border: 34px solid $color-white;
+  border-left: 30px solid transparent;
+}
+
+.programs__info-list {
+  margin-left: 64px;
+}
+
+.programs__info-block {
+  position: absolute;
+  display: none;
+  opacity: 0;
+}
+
+.programs__btn--general:checked ~ .programs__info-slider .programs__info-block:nth-child(1),
+.programs__btn--academic:checked ~ .programs__info-slider .programs__info-block:nth-child(2),
+.programs__btn--internships:checked ~ .programs__info-slider .programs__info-block:nth-child(3),
+.programs__btn--volunteering:checked ~ .programs__info-slider .programs__info-block:nth-child(4),
+.programs__btn--religious:checked ~ .programs__info-slider .programs__info-block:nth-child(5) {
+  display: block;
+  opacity: 1;
+}
+
+.programs__info-title {
+  font-family: $second-font;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 28px;
+  line-height: 34px;
+  letter-spacing: -0.02em;
+  color: $color-blue;
+  margin: 0;
+  margin-bottom: 24px;
+}
+
+.programs__info-text {
+  width: 560px;
+  font-size: 15px;
+  line-height: 170%;
+  opacity: 0.87;
+}
