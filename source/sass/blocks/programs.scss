@@ -128,7 +128,6 @@
 }
 
 .programs__info-block {
-  position: absolute;
   display: none;
   opacity: 0;
 }
@@ -226,10 +225,6 @@
 
   .programs__info-list {
     margin-left: 0;
-  }
-
-  .programs__info-block {
-    position: inherit;
   }
 
   .programs__info-title {
