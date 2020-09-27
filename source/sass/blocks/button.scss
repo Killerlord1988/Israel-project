@@ -1,0 +1,22 @@
+.button {
+  padding: 20px 40px;
+  background: $color-yellow-gradient;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 20px;
+  font-variant: small-caps;
+  color: $color-white;
+  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.12);
+  border: none;
+  border-radius: 80px;
+  cursor: pointer;
+}
+
+@media (max-width: $mobile-width) {
+  .button {
+    display: block;
+    width: 264px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
