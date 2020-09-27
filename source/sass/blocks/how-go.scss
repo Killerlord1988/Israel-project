@@ -7,10 +7,11 @@
   background-repeat: no-repeat;
   background-position: left top;
   counter-reset: section;
+  margin-bottom: 160px;
 }
 
 @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-  .want-go {
+  .how-go {
     background-image: url("../img/bg-how-go@2x.png");
   }
 }
@@ -123,6 +124,7 @@
   .how-go {
     min-height: auto;
     background-image: none;
+    margin-bottom: 80px;
   }
 
   .how-go__stamp {
