@@ -1,0 +1,128 @@
+.how-go {
+  position: relative;
+  width: 100%;
+  min-height: 715px;
+  background-image: url("../img/bg-how-go@1x.png");
+  background-size: 581px auto;
+  background-repeat: no-repeat;
+  background-position: left top;
+  counter-reset: section;
+}
+
+@media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+  .want-go {
+    background-image: url("../img/bg-how-go@2x.png");
+  }
+}
+
+.how-go__stamp {
+  position: absolute;
+  top: 170px;
+  right: 0;
+  width: 167px;
+  height: 245px;
+  background-image: url("../img/bg-stamp.png");
+  background-repeat: no-repeat;
+}
+
+.how-go__wrapper-info {
+  margin-left: 50%;
+}
+
+.how-go__title {
+  text-align: left;
+  margin: 0;
+  margin-top: 31px;
+  margin-bottom: 24px;
+}
+
+.how-go__text {
+  max-width: 480px;
+  font-size: 15px;
+  line-height: 170%;
+  color: $color-black;
+  opacity: 0.87;
+}
+
+.how-go__instruction {
+  max-width: 480px;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 170%;
+  margin-bottom: 31px;
+}
+
+.how-go__list {
+  max-width: 480px;
+  position: relative;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.how-go__list::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  width: 1px;
+  height: 98%;
+  left: 18px;
+  border-left: 1px dashed $color-black;
+  opacity: 0.2;
+}
+
+.how-go__item {
+  position: relative;
+  padding-left: 60px;
+  margin-bottom: 40px;
+}
+
+.how-go__item::before {
+  position: absolute;
+  content: "";
+
+  width: 36px;
+  height: 36px;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: $color-white;
+}
+
+.how-go__item::after {
+  position: absolute;
+  counter-increment: section;
+  content: counter(section);
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 170%;
+  color: $color-yellow;
+
+  left: 14px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.how-go__add-condition {
+  max-width: 552px;
+  position: relative;
+  font-size: 15px;
+  line-height: 140%;
+  color: $color-black;
+  opacity: 0.5;
+  padding-left: 32px;
+}
+
+.how-go__add-condition::before {
+  position: absolute;
+  content: "";
+
+  width: 4px;
+  height: 42px;
+
+  left: 15px;
+
+  background-color: $color-yellow;
+}
