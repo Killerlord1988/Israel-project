@@ -42,6 +42,7 @@
   line-height: 170%;
   color: $color-black;
   opacity: 0.87;
+  margin-bottom: 32px;
 }
 
 .how-go__instruction {
@@ -72,6 +73,8 @@
 }
 
 .how-go__item {
+  font-size: 15px;
+  line-height: 140%;
   position: relative;
   padding-left: 60px;
   margin-bottom: 40px;
@@ -110,19 +113,54 @@
   position: relative;
   font-size: 15px;
   line-height: 140%;
-  color: $color-black;
-  opacity: 0.5;
-  padding-left: 32px;
+  color: rgba($color: $color-black, $alpha: 0.5);
+  padding-left: 16px;
+  margin-left: 16px;
+  border-left: 4px solid $color-yellow;
 }
 
-.how-go__add-condition::before {
-  position: absolute;
-  content: "";
+@media (max-width: $mobile-width) {
+  .how-go {
+    min-height: none;
+    background-image: none;
+  }
 
-  width: 4px;
-  height: 42px;
+  .how-go__stamp {
+    top: 200px;
+    width: 215px;
+    height: 199px;
+    background-image: url("../img/bg-stamp-mobile.png");
+  }
 
-  left: 15px;
 
-  background-color: $color-yellow;
+  .how-go__wrapper-info {
+    margin-left: 0;
+  }
+
+  .how-go__title {
+    text-align: center;
+    margin: 0;
+    margin-top: 0;
+  }
+
+  .how-go__text {
+    max-width: none;
+    font-size: 14px;
+    line-height: 160%;
+    margin-bottom: 24px;
+  }
+
+  .how-go__instruction {
+    max-width: none;
+    font-size: 16px;
+    line-height: 160%;
+    margin-bottom: 24px;
+  }
+
+  .how-go__item {
+    font-size: 14px;
+    line-height: 160%;
+    padding-left: 50px;
+    margin-bottom: 40px;
+  }
 }
