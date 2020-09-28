@@ -89,6 +89,10 @@
   margin-right: 15px;
 }
 
+.review__social-link:last-child {
+  margin-right: 0;
+}
+
 .review__slider-nav {
   display: flex;
   align-items: center;
@@ -140,7 +144,7 @@
   }
 
   .review__sketch {
-    top: 850px;
+    top: 550px;
     width: 439px;
     height: 261px;
     background-repeat: no-repeat;
