@@ -3,6 +3,7 @@
   background-size: 680px auto;
   background-repeat: no-repeat;
   background-position: right 0;
+  margin-bottom: 31px;
 }
 
 .programs__title {
@@ -154,7 +155,7 @@
 }
 
 .programs__info-text {
-  width: 560px;
+  max-width: 560px;
   font-size: 15px;
   line-height: 170%;
   opacity: 0.87;
@@ -164,6 +165,7 @@
   .programs {
     background-size: 320px auto;
     background-position: right 135px;
+    margin-bottom: 80px;
   }
 
   .programs__title {
@@ -236,6 +238,6 @@
     font-size: 14px;
     line-height: 160%;
 
-    width: auto;
+    max-width: none;
   }
 }
