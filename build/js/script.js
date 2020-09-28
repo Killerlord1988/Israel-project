@@ -10,6 +10,6 @@ $(window).on('load resize', function () {
       appendArrows: false,
     });
   } else {
-    $('.about-life__slider').slick('unslick');
+    $('.about-life__slider').filter('.slick-initialized').slick('unslick');
   }
 });
