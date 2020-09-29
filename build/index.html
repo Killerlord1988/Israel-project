@@ -709,6 +709,26 @@
     </div>
   </footer>
 
+  <!-- Модальное окно -->
+  <template id="modal__call">
+    <section class="modal">
+      <div class="modal__overlay overlay">
+        <div class="modal__block container">
+          <h2 class="modal__title">Заказать звонок</h2>
+          <p class="modal__text">Оставьте ваши контактные данные, мы свяжемся с вами в течение рабочего дня и обязательно поможем найти ответ на ваш вопрос!</p>
+          <form class="modal__data-block" action="https://echo.htmlacademy.ru" method="POST">
+            <input class="modal__input-field-name" name="name" type="text" placeholder="имя" required="">
+            <input class="modal__input-field-phone" name="phone" type="tel" pattern="[0-9]*" placeholder="телефон" required="">
+            <button class="modal__button button submit" type="submit">перезвоните мне</button>
+            <input class="modal__checkbox visually-hidden" type="checkbox" name="person__success" id="person__success">
+            <label class="modal__checkbox-label" for="person__success">Нажимая на кнопку, вы даёте согласие на обработку персональных данных</label>
+          </form>
+          <button class="modal__close close"></button>
+        </div>
+      </div>
+    </section>
+  </template>
+
   <script src="js/dragscroll.min.js"></script>
   <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
