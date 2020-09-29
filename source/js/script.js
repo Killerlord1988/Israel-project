@@ -13,3 +13,24 @@ $(window).on('load resize', function () {
     $('.about-life__slider').filter('.slick-initialized').slick('unslick');
   }
 });
+
+$(window).on('load', function () {
+  $('.review__slider').slick({
+    dots: false,
+    infinite: true,
+    speed: 100,
+    slidesToShow: 1,
+    // autoplay: true,
+    appendArrows: false,
+    arrows:true,
+    prevArrow: $('.review__slider-arrow--prev'),
+    nextArrow: $('.review__slider-arrow--next'),
+    // prevArrow: "<button class='review__slider-arrow review__slider-arrow--prev' type='button'></button>",
+    // nextArrow: "<button class='review__slider-arrow review__slider-arrow--next' type='button'></button>",
+  });
+});
+
+$('.review__slider').on('init reInit afterChange', function(event, slick, currentSlide, nextSlide){
+  var i = (currentSlide ? currentSlide : 0) + 1;
+  $('.review__slider-counter').html('<span class="current">' + i + '</span>' + ' / ' + slick.slideCount);
+});
