@@ -25,8 +25,6 @@ $(window).on('load', function () {
     arrows:true,
     prevArrow: $('.review__slider-arrow--prev'),
     nextArrow: $('.review__slider-arrow--next'),
-    // prevArrow: "<button class='review__slider-arrow review__slider-arrow--prev' type='button'></button>",
-    // nextArrow: "<button class='review__slider-arrow review__slider-arrow--next' type='button'></button>",
   });
 });
 
