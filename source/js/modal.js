@@ -14,18 +14,22 @@ var callRequest = document.querySelector('.top-block__request-call')
 function addModalHandler() {
   var modalCall = document.body.querySelector('main .modal');
   var overlayArea = modalCall.querySelector('.overlay')
-  var closeButton = modalCall.querySelector('.close');
+  var closeButton = modalCall.querySelectorAll('.close');
 
   function removeListener() {
     overlayArea.removeEventListener('click', removeModalOverlayClick);
-    closeButton.removeEventListener('click', removeModalClick);
+    Object.keys(closeButton).forEach(function(el) {
+      closeButton[el].addEventListener('click', removeModalClick);
+    })
     document.removeEventListener('keydown', removeModalPressEscape);
   }
 
   function addListener() {
     document.body.style.overflow = 'hidden';
     overlayArea.addEventListener('click', removeModalOverlayClick);
-    closeButton.addEventListener('click', removeModalClick);
+    Object.keys(closeButton).forEach(function(el) {
+      closeButton[el].addEventListener('click', removeModalClick);
+    })
     document.addEventListener('keydown', removeModalPressEscape);
   }
 
