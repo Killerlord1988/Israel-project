@@ -13,6 +13,14 @@
   height: fit-content;
 }
 
+.button:hover {
+  background: $color-yellow-gradient-hover;
+}
+
+.button:active {
+  background: $color-yellow-gradient-active, $color-yellow-gradient-hover;
+}
+
 @media (max-width: $mobile-width) {
   .button {
     display: block;

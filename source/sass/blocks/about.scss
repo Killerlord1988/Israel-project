@@ -45,11 +45,27 @@
   border-radius: 50%;
 }
 
+.about__play-btn:hover {
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.05);
+}
+
+.about__play-btn:active {
+  background: #f4f4f4;
+}
+
 .about__play-btn-img {
   position: absolute;
   left: 54%;
   top: 50%;
   transform: translate(-50%, -50%);
+}
+
+.about__play-btn:hover .about__play-btn-img {
+  opacity: 0.7;
+}
+
+.about__play-btn:active .about__play-btn-img {
+  opacity: 1;
 }
 
 @media (max-width: $mobile-width) {
