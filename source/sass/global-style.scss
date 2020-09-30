@@ -67,3 +67,33 @@ img {
 a {
   text-decoration: none;
 }
+
+.input__block {
+  position: relative;
+}
+
+.input-invalid {
+  position: absolute;
+  display: none;
+
+  font-size: 13px;
+  line-height: 150%;
+  color: $color-error;
+  opacity: 0.75;
+}
+
+.input-data:invalid {
+  border-color: $color-error;
+}
+
+.input-data:valid {
+  border-color: $color-black;
+}
+
+.input-data:focus {
+  border-color: $color-yellow;
+}
+
+.input-data:invalid ~ .input-invalid {
+  display: block;
+}

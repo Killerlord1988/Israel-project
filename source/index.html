@@ -161,7 +161,7 @@
         <p class="want-go__text">Оставьте свой телефон и мы свяжемся с вами, подберём куратора и ответим на все вопросы!
         </p>
         <form class="want-go__form" action="https://echo.htmlacademy.ru" method="POST">
-          <input class="want-go__input-field" name="phone" type="tel" pattern="[0-9]*" placeholder="телефон" required>
+          <div class="input-block"><input class="want-go__input-field input-data" name="phone" type="tel" pattern="[0-9]*" placeholder="телефон" required><span class="input-invalid">Данные не верны</span></div>
           <button class="want-go__submit button" type="submit">перезвоните мне</button>
         </form>
       </div>
@@ -678,8 +678,8 @@
           <p class="more-details__call-text-security">Мы не передаём данные третьим лицам. Ваши данные будут в безопасности и вам не придёт спам от нас!</p>
         </div>
         <form class="more-details__form" action="https://echo.htmlacademy.ru" method="POST">
-          <input class="more-details__input-field-name" name="name" type="text" placeholder="имя" required>
-          <input class="more-details__input-field-phone" name="phone" type="tel" pattern="[0-9]*" placeholder="телефон" required>
+          <div class="input-block"><input class="more-details__input-field-name input-data" name="name" type="text" placeholder="имя" required><span class="input-invalid">Данные не верны</span></div>
+          <div class="input-block"><input class="more-details__input-field-phone input-data" name="phone" type="tel" placeholder="телефон" required><span class="input-invalid">Данные не верны</span></div>
           <button class="more-details__submit button" type="submit">перезвоните мне</button>
         </form>
       </div>
@@ -743,8 +743,7 @@
   </template>
 
   <script src="js/dragscroll.min.js"></script>
-  <script src="https://code.jquery.com/jquery-3.4.1.min.js"
-    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
   <script src="js/slider.js"></script>
   <script src="js/modal.js"></script>
