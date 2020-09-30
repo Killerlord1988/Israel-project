@@ -9,27 +9,27 @@ var successTemplate = document.querySelector('#success')
   .querySelector('.success');
 var success = successTemplate.cloneNode(true);
 
-var callRequest = document.querySelector('.top-block__request-call')
+var callRequest = document.querySelector('.top-block__request-call');
 
 function addModalHandler() {
   var modalCall = document.body.querySelector('main .modal');
-  var overlayArea = modalCall.querySelector('.overlay')
+  var overlayArea = modalCall.querySelector('.overlay');
   var closeButton = modalCall.querySelectorAll('.close');
 
   function removeListener() {
     overlayArea.removeEventListener('click', removeModalOverlayClick);
-    Object.keys(closeButton).forEach(function(el) {
+    Object.keys(closeButton).forEach(function (el) {
       closeButton[el].addEventListener('click', removeModalClick);
-    })
+    });
     document.removeEventListener('keydown', removeModalPressEscape);
   }
 
   function addListener() {
     document.body.style.overflow = 'hidden';
     overlayArea.addEventListener('click', removeModalOverlayClick);
-    Object.keys(closeButton).forEach(function(el) {
+    Object.keys(closeButton).forEach(function (el) {
       closeButton[el].addEventListener('click', removeModalClick);
-    })
+    });
     document.addEventListener('keydown', removeModalPressEscape);
   }
 
@@ -78,14 +78,14 @@ callRequest.addEventListener('click', function (evt) {
     var arrData = [];
     Object.keys(inputData).forEach(function (el) {
       arrData.push(inputData[el].value);
-    })
+    });
     localStorage.setItem('personData', JSON.stringify(arrData));
     var modal = document.body.querySelector('main .modal');
     modal.parentNode.removeChild(modal);
     document.body.querySelector('main').prepend(success);
     addModalHandler();
   });
-})
+});
 
 var wantGo = document.querySelector('.want-go__form');
 var inputPhone = wantGo.querySelector('.want-go__input-field');
@@ -97,7 +97,7 @@ wantGo.addEventListener('submit', function (evt) {
   localStorage.setItem('personData', JSON.stringify(arrData));
   document.body.querySelector('main').prepend(success);
   addModalHandler();
-})
+});
 
 var moreDetails = document.querySelector('.more-details__form');
 var inputData = moreDetails.querySelectorAll('.more-details__form input');
@@ -107,9 +107,8 @@ moreDetails.addEventListener('submit', function (evt) {
   var arrData = [];
   Object.keys(inputData).forEach(function (el) {
     arrData.push(inputData[el].value);
-  })
+  });
   localStorage.setItem('personData', JSON.stringify(arrData));
   document.body.querySelector('main').prepend(success);
   addModalHandler();
-})
-
+});
