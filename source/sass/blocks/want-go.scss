@@ -47,6 +47,10 @@
   margin-left: auto;
 }
 
+.want-go__form {
+  display: flex;
+}
+
 .want-go__input-field {
   width: 477px;
   padding: 19px 40px;
@@ -66,7 +70,7 @@
 }
 
 .want-go__submit {
-  margin-left: -220px;
+  margin-left: -210px;
 }
 
 @media (max-width: 1145px) {
@@ -100,6 +104,11 @@
 
   .want-go__text {
     max-width: none;
+  }
+
+  .want-go__form {
+    width: 100%;
+    display: inline-block;
   }
 
   .want-go__input-field {
