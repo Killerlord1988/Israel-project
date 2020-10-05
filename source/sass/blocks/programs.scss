@@ -132,15 +132,6 @@
   opacity: 0;
 }
 
-.programs__btn--general:checked ~ .programs__info-slider .programs__info-block:nth-child(1),
-.programs__btn--academic:checked ~ .programs__info-slider .programs__info-block:nth-child(2),
-.programs__btn--internships:checked ~ .programs__info-slider .programs__info-block:nth-child(3),
-.programs__btn--volunteering:checked ~ .programs__info-slider .programs__info-block:nth-child(4),
-.programs__btn--religious:checked ~ .programs__info-slider .programs__info-block:nth-child(5) {
-  display: block;
-  opacity: 1;
-}
-
 .programs__info-title {
   font-family: $second-font;
   font-style: normal;
