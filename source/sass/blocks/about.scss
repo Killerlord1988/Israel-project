@@ -6,12 +6,12 @@
   background-position: bottom;
   background-repeat: no-repeat;
   padding-bottom: 96px;
-  margin-bottom: 104px;
+  margin-bottom: 100px;
 }
 
 .about__title {
   margin: 0;
-  margin-bottom: 24px;
+  margin-bottom: 9px;
 }
 
 .about__text {
@@ -78,10 +78,11 @@
   }
 
   .about__title {
-    margin-bottom: 24px;
+    margin-bottom: 9px;
   }
 
   .about__text {
+    text-align: left;
     font-size: 16px;
     line-height: 160%;
     width: 100%;

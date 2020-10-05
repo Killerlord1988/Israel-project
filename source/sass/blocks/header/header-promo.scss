@@ -1,0 +1,28 @@
+.header-promo {
+  width: 100%;
+  background-image: url("../img/bg-header-desktop@1x.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center top;
+}
+
+@media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+  .header-promo {
+    background-image: url("../img/bg-header-desktop@2x.png");
+  }
+}
+
+
+@media (max-width: $mobile-width) {
+  .header-promo {
+    background-image: url("../img/bg-header-mobile@1x.png");
+    background-size: 100%;
+    padding-top: 32px;
+  }
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    .header-promo {
+      background-image: url("../img/bg-header-mobile@2x.png");
+    }
+  }
+}

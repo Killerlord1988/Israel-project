@@ -3,13 +3,13 @@
   background-size: 680px auto;
   background-repeat: no-repeat;
   background-position: right 0;
-  margin-bottom: 31px;
+  margin-bottom: 10px;
+  margin-left: 200px;
 }
 
 .programs__title {
   text-align: left;
-  padding-top: 48px;
-  margin-bottom: 83px;
+  margin-bottom: 66px;
 }
 
 .programs__info-slider {
@@ -30,7 +30,7 @@
   padding-left: 72px;
   padding-right: 11px;
   padding-top: 25px;
-  padding-bottom: 25px;
+  padding-bottom: 29px;
   user-select: none;
   cursor: pointer;
 }
@@ -120,7 +120,7 @@
   right: -34px;
   top: 50%;
   transform: translateY(-50%);
-  border: 35px solid $color-white;
+  border: 37px solid $color-white;
   border-left: 30px solid transparent;
 }
 
@@ -133,15 +133,6 @@
   opacity: 0;
 }
 
-.programs__btn--general:checked ~ .programs__info-slider .programs__info-block:nth-child(1),
-.programs__btn--academic:checked ~ .programs__info-slider .programs__info-block:nth-child(2),
-.programs__btn--internships:checked ~ .programs__info-slider .programs__info-block:nth-child(3),
-.programs__btn--volunteering:checked ~ .programs__info-slider .programs__info-block:nth-child(4),
-.programs__btn--religious:checked ~ .programs__info-slider .programs__info-block:nth-child(5) {
-  display: block;
-  opacity: 1;
-}
-
 .programs__info-title {
   font-family: $second-font;
   font-style: normal;
@@ -151,6 +142,7 @@
   letter-spacing: -0.02em;
   color: $color-blue;
   margin: 0;
+  margin-top: 16px;
   margin-bottom: 24px;
 }
 
@@ -165,12 +157,12 @@
   .programs {
     background-size: 320px auto;
     background-position: right 135px;
-    margin-bottom: 80px;
+    margin-bottom: 65px;
+    margin-left: 0;
   }
 
   .programs__title {
     text-align: center;
-    padding-top: 0;
     margin-bottom: 16px;
   }
 
@@ -184,7 +176,7 @@
   }
 
   .programs__nav-menulimiter {
-    padding-bottom: 20px;
+    padding-bottom: 5px;
     margin-bottom: -20px;
     overflow-x: scroll;
     -webkit-overflow-scrolling: touch;
@@ -232,6 +224,7 @@
   .programs__info-title {
     font-size: 24px;
     line-height: 29px;
+    margin-bottom: 18px;
   }
 
   .programs__info-text {
