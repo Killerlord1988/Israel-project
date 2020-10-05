@@ -9,7 +9,7 @@ var successTemplate = document.querySelector('#success')
   .querySelector('.success');
 var success = successTemplate.cloneNode(true);
 
-var callRequest = document.querySelector('.top-block__request-call');
+var callRequest = document.querySelector('.header__request-call');
 
 function addModalHandler() {
   var modalCall = document.body.querySelector('main .modal');
