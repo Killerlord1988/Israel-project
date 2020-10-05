@@ -1,7 +1,6 @@
 .faq {
   position: relative;
   width: 100%;
-  min-height: 815px;
   background: url("../img/faq@1x.png"),
     url("../img/bg-watercolor-faq.png");
   background-size: 645px auto, cover;
@@ -26,6 +25,10 @@
   height: 177px;
   background-image: url("../img/bg-bag.png");
   background-repeat: no-repeat;
+}
+
+.faq__wrapper {
+  padding-bottom: 140px;
 }
 
 .faq__wrapper-question {

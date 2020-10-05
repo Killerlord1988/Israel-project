@@ -1,7 +1,6 @@
 .how-go {
   position: relative;
   width: 100%;
-  min-height: 715px;
   background: url("../img/bg-how-go@1x.png"),
     url("../img/bg-watercolor-how-go.png");
   background-size: 581px auto;
@@ -29,6 +28,7 @@
 
 .how-go__wrapper-info {
   margin-left: 50%;
+  padding-bottom: 120px;
 }
 
 .how-go__title {

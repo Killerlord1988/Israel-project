@@ -1,7 +1,6 @@
 .want-go {
   position: relative;
   width: 100%;
-  height: 600px;
   background-image: url("../img/bg-girl-flag-@1x.png");
   background-size: 818px auto;
   background-repeat: no-repeat;
@@ -49,6 +48,7 @@
 
 .want-go__form {
   display: flex;
+  padding-bottom: 150px;
 }
 
 .want-go__input-field {
