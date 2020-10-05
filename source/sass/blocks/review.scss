@@ -1,7 +1,7 @@
 .review {
   position: relative;
   width: 100%;
-  margin-bottom: 109px;
+  margin-bottom: 14px;
 }
 
 .review__sketch {
@@ -32,7 +32,7 @@
 }
 
 .review__avatar {
-  margin-right: 40px;
+  margin-right: 20px;
   min-width: 364px;
 }
 
@@ -55,6 +55,7 @@
 .review__program {
   font-size: 15px;
   line-height: 140%;
+  margin-bottom: 32px;
 }
 
 .review__program-naming {
@@ -76,7 +77,7 @@
   text-decoration-line: underline;
   color: $color-blue;
   display: inline-block;
-  margin-bottom: 55px;
+  margin-bottom: 60px;
 }
 
 .review__wrapper-nav-social {

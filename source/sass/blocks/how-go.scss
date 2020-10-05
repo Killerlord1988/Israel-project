@@ -7,7 +7,8 @@
   background-repeat: no-repeat;
   background-position: left top;
   counter-reset: section;
-  margin-bottom: 160px;
+  margin-bottom: 73px;
+  padding-top: 1px;
 }
 
 @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
@@ -27,7 +28,7 @@
 }
 
 .how-go__wrapper-info {
-  margin-left: 50%;
+  margin-left: 51%;
   padding-bottom: 120px;
 }
 
@@ -44,7 +45,7 @@
   line-height: 170%;
   color: $color-black;
   opacity: 0.87;
-  margin-bottom: 32px;
+  margin-bottom: 38px;
 }
 
 .how-go__instruction {
@@ -79,7 +80,7 @@
   line-height: 140%;
   position: relative;
   padding-left: 60px;
-  margin-bottom: 40px;
+  margin-bottom: 47px;
 }
 
 .how-go__item::before {

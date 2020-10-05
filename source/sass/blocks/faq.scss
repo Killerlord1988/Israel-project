@@ -1,18 +1,18 @@
 .faq {
   position: relative;
   width: 100%;
-  background: url("../img/faq@1x.png"),
+  background-image: url("../img/faq@1x.png"),
     url("../img/bg-watercolor-faq.png");
   background-size: 645px auto, cover;
   background-repeat: no-repeat, no-repeat;
   background-position: top right, center center;
   counter-reset: section;
-  margin-bottom: 128px;
+  margin-bottom: 85px;
 }
 
 @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
   .faq {
-    background: url("../img/faq@2x.png"),
+    background-image: url("../img/faq@2x.png"),
       url("../img/bg-watercolor-faq.png");
   }
 }
@@ -28,7 +28,7 @@
 }
 
 .faq__wrapper {
-  padding-bottom: 140px;
+  padding-bottom: 210px;
 }
 
 .faq__wrapper-question {
@@ -53,7 +53,10 @@
 
 .faq__question {
   margin: 0;
-  padding: 30px 29px;
+  padding-top: 25px;
+  padding-bottom: 28px;
+  padding-left: 29px;
+  padding-right: 29px;
   position: relative;
   font-size: 17px;
   line-height: 150%;
