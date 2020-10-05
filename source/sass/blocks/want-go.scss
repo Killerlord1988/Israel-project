@@ -79,9 +79,10 @@
     background-image: url("../img/bg-girl-flag-@1x.png");
 
     background-position: center bottom;
-    background-size: 624px auto;
+    background-size: 434px auto;
 
-    height: 760px;
+    min-height: 600px;
+    margin-bottom: 80px;
   }
 
   .want-go__bagpack {
@@ -92,6 +93,7 @@
 
   .want-go__wrapper-callback {
     padding-top: 0;
+    margin-left: 0;
   }
 
   .want-go__title {
@@ -105,11 +107,24 @@
 
   .want-go__text {
     max-width: none;
+    font-size: 16px;
+    margin-bottom: 21px;
   }
 
   .want-go__form {
     width: 100%;
     display: inline-block;
+  }
+
+  .want-go__form .input-block {
+    position: relative;
+  }
+
+  .want-go__form .input-invalid {
+    position: absolute;
+    left: 25px;
+    top: 40px;
+    z-index: 10;
   }
 
   .want-go__input-field {

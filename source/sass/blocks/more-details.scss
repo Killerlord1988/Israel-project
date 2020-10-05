@@ -199,6 +199,7 @@
 
   .more-details__title {
     text-align: center;
+    margin-bottom: 24px;
   }
 
   .more-details__curator-wrapper {
@@ -224,12 +225,16 @@
     width: auto;
     margin-left: -16px;
     margin-right: -16px;
-    margin-bottom: 24px;
+    margin-bottom: 18px;
   }
 
   .more-details__wrapper-map-img {
     position: inherit;
     width: 100%;
+  }
+
+  .more-details__call-text-security {
+    margin-bottom: 30px;
   }
 
   .more-details__wrapper-call {
@@ -243,6 +248,17 @@
   .more-details__call-text-question {
     font-size: 16px;
     line-height: 150%;
+  }
+
+  .more-details__form .input-block {
+    position: relative;
+  }
+
+  .more-details__form .input-invalid {
+    position: absolute;
+    left: 25px;
+    top: 40px;
+    z-index: 10;
   }
 
   .more-details__input-field-name,

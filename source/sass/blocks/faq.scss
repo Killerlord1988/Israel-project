@@ -117,10 +117,14 @@
   }
 
   .faq__bag {
-    bottom: 20px;
+    bottom: 100px;
     left: -30px;
     width: 194px;
     height: 177px;
+  }
+
+  .faq__wrapper {
+    padding-bottom: 50px;
   }
 
   .faq__wrapper-question {
@@ -133,15 +137,17 @@
 
   .faq__question {
     margin: 0;
-    padding: 16px 25px;
-    padding-top: 38px;
+    padding-top: 13px;
+    padding-bottom: 32px;
+    padding-left: 25px;
+    padding-right: 25px;
     font-size: 16px;
     line-height: 160%;
     max-width: none;
   }
 
   .faq__question::before {
-    top: 24px;
+    top: 0;
   }
 
   .faq__question::after {

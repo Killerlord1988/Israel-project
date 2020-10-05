@@ -157,7 +157,8 @@
   .programs {
     background-size: 320px auto;
     background-position: right 135px;
-    margin-bottom: 80px;
+    margin-bottom: 65px;
+    margin-left: 0;
   }
 
   .programs__title {
@@ -175,7 +176,7 @@
   }
 
   .programs__nav-menulimiter {
-    padding-bottom: 20px;
+    padding-bottom: 5px;
     margin-bottom: -20px;
     overflow-x: scroll;
     -webkit-overflow-scrolling: touch;
@@ -223,6 +224,7 @@
   .programs__info-title {
     font-size: 24px;
     line-height: 29px;
+    margin-bottom: 18px;
   }
 
   .programs__info-text {
