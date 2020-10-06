@@ -104,6 +104,10 @@
   background-image: url("../img/checkmark.svg");
 }
 
+.modal__checkbox:focus ~ .modal__checkbox-label::before {
+  outline: 1px solid $color-black;
+}
+
 .modal__close {
   position: absolute;
   top: 32px;
