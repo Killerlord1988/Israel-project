@@ -64,6 +64,7 @@ function addModalHandler() {
 callRequest.addEventListener('click', function (evt) {
   evt.preventDefault();
   document.body.querySelector('main').prepend(modal);
+  $('.mask-phone').mask('+7 (999) 999-99-99');
 
   var nameInput = document.querySelector('.modal__input-field-name');
   nameInput.focus();
