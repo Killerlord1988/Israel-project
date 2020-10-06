@@ -1,7 +1,7 @@
 .preview-inst {
   position: relative;
   width: 100%;
-  background-image: url("../img/preview-inst-desktop@1x.png");
+  background-image: url("../img/preview-inst-desktop@1x.jpg");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center top;
@@ -10,7 +10,7 @@
 
 @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
   .preview-inst {
-    background-image: url("../img/preview-inst-desktop@2x.png");
+    background-image: url("../img/preview-inst-desktop@2x.jpg");
   }
 }
 
@@ -49,14 +49,14 @@
 
 @media (max-width: $mobile-width) {
   .preview-inst {
-    background-image: url("../img/preview-inst-mobile@1x.png");
+    background-image: url("../img/preview-inst-mobile@1x.jpg");
     margin-bottom: 80px;
     background-position: center 80px;
   }
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
     .preview-inst {
-      background-image: url("../img/preview-inst-mobile@2x.png");
+      background-image: url("../img/preview-inst-mobile@2x.jpg");
     }
   }
 

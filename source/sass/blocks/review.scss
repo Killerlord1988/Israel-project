@@ -25,6 +25,7 @@
 
 .review__slider {
   display: flex;
+  height: 100%;
 }
 
 .review__slide-wrapper:focus {
@@ -33,6 +34,7 @@
 
 .review__slide {
   display: flex;
+  height: 100%;
 }
 
 .review__avatar {
@@ -43,6 +45,9 @@
 .review__wrapper-info {
   position: relative;
   max-width: 680px;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
 }
 
 .review__name {
@@ -88,6 +93,7 @@
   display: flex;
   justify-content: space-between;
   width: 100%;
+  margin-top: auto;
 }
 
 .review__social {

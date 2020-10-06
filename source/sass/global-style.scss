@@ -82,11 +82,11 @@ a {
   opacity: 0.75;
 }
 
-.input-data:invalid {
+.input-data:invalid:not(:placeholder-shown) {
   border-color: $color-error;
 }
 
-.input-data:valid {
+.input-data:valid:not(:placeholder-shown) {
   border-color: $color-black;
 }
 
@@ -94,6 +94,6 @@ a {
   border-color: $color-yellow;
 }
 
-.input-data:invalid ~ .input-invalid {
+.input-data:invalid:not(:placeholder-shown) ~ .input-invalid {
   display: block;
 }
