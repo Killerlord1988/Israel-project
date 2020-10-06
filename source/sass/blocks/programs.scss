@@ -110,6 +110,14 @@
   opacity: 1;
 }
 
+.programs__btn--general:focus ~ .programs__info-slider .programs__label[for="program-1"],
+.programs__btn--academic:focus ~ .programs__info-slider .programs__label[for="program-2"],
+.programs__btn--internships:focus ~ .programs__info-slider .programs__label[for="program-3"],
+.programs__btn--volunteering:focus ~ .programs__info-slider .programs__label[for="program-4"],
+.programs__btn--religious:focus ~ .programs__info-slider .programs__label[for="program-5"] {
+  outline: 1px solid $color-black;
+}
+
 .programs__btn--general:checked ~ .programs__info-slider .programs__label[for="program-1"]::after,
 .programs__btn--academic:checked ~ .programs__info-slider .programs__label[for="program-2"]::after,
 .programs__btn--internships:checked ~ .programs__info-slider .programs__label[for="program-3"]::after,
