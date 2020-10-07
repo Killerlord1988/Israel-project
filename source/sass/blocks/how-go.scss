@@ -2,10 +2,11 @@
   position: relative;
   width: 100%;
   background: url("../img/bg-how-go@1x.png"),
-    url("../img/bg-watercolor-how-go.png");
-  background-size: 581px auto;
+    url("../img/bg-watercolor-how-go.png"),
+    url("../img/bg-stamp.png");
+  background-size: 581px auto, contain, 167px auto;
   background-repeat: no-repeat;
-  background-position: left top;
+  background-position: left top, left top, right 170px;
   counter-reset: section;
   margin-bottom: 73px;
   padding-top: 1px;
@@ -13,18 +14,10 @@
 
 @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
   .how-go {
-    background-image: url("../img/bg-how-go@2x.png");
+    background-image: url("../img/bg-how-go@2x.png"),
+      url("../img/bg-watercolor-how-go.png"),
+      url("../img/bg-stamp.png");
   }
-}
-
-.how-go__stamp {
-  position: absolute;
-  top: 170px;
-  right: 0;
-  width: 167px;
-  height: 245px;
-  background-image: url("../img/bg-stamp.png");
-  background-repeat: no-repeat;
 }
 
 .how-go__wrapper-info {
@@ -124,18 +117,12 @@
 
 @media (max-width: 1100px) {
   .how-go {
+    background-image: url("../img/bg-stamp-mobile.png");
+    background-size: 215px auto;
+    background-position: right 280px;
     min-height: auto;
-    background-image: none;
     margin-bottom: 70px;
   }
-
-  .how-go__stamp {
-    top: 200px;
-    width: 215px;
-    height: 199px;
-    background-image: url("../img/bg-stamp-mobile.png");
-  }
-
 
   .how-go__wrapper-info {
     margin-left: 0;
