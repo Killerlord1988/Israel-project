@@ -94,11 +94,7 @@
   background: url("../img/css_sprites.png") -53px -173px;
 }
 
-.programs__btn--general:checked ~ .programs__info-slider .programs__label[for="program-1"],
-.programs__btn--academic:checked ~ .programs__info-slider .programs__label[for="program-2"],
-.programs__btn--internships:checked ~ .programs__info-slider .programs__label[for="program-3"],
-.programs__btn--volunteering:checked ~ .programs__info-slider .programs__label[for="program-4"],
-.programs__btn--religious:checked ~ .programs__info-slider .programs__label[for="program-5"] {
+.programs__label--checked {
   background: $color-yellow-gradient;
   color: $color-white;
   text-transform: uppercase;
@@ -106,19 +102,11 @@
   opacity: 1;
 }
 
-.programs__btn--general:focus ~ .programs__info-slider .programs__label[for="program-1"],
-.programs__btn--academic:focus ~ .programs__info-slider .programs__label[for="program-2"],
-.programs__btn--internships:focus ~ .programs__info-slider .programs__label[for="program-3"],
-.programs__btn--volunteering:focus ~ .programs__info-slider .programs__label[for="program-4"],
-.programs__btn--religious:focus ~ .programs__info-slider .programs__label[for="program-5"] {
+.programs__btn:focus ~ .programs__info-slider .programs__label--checked {
   outline: 1px solid $color-black;
 }
 
-.programs__btn--general:checked ~ .programs__info-slider .programs__label[for="program-1"]::after,
-.programs__btn--academic:checked ~ .programs__info-slider .programs__label[for="program-2"]::after,
-.programs__btn--internships:checked ~ .programs__info-slider .programs__label[for="program-3"]::after,
-.programs__btn--volunteering:checked ~ .programs__info-slider .programs__label[for="program-4"]::after,
-.programs__btn--religious:checked ~ .programs__info-slider .programs__label[for="program-5"]::after {
+.programs__label--checked::after {
   position: absolute;
   content: "";
   right: -34px;
@@ -209,11 +197,11 @@
     left: 12px;
   }
 
-  .programs__btn--general:checked ~ .programs__info-slider .programs__label[for="program-1"]::after,
-  .programs__btn--academic:checked ~ .programs__info-slider .programs__label[for="program-2"]::after,
-  .programs__btn--internships:checked ~ .programs__info-slider .programs__label[for="program-3"]::after,
-  .programs__btn--volunteering:checked ~ .programs__info-slider .programs__label[for="program-4"]::after,
-  .programs__btn--religious:checked ~ .programs__info-slider .programs__label[for="program-5"]::after {
+  .programs__label--checked {
+    opacity: 1;
+  }
+
+  .programs__label--checked::after {
     border: none;
   }
 
