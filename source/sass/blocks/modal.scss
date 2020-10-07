@@ -71,6 +71,12 @@
   margin-bottom: 16px;
 }
 
+.modal__checkbox {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-124px);
+}
+
 .modal__checkbox-label {
   position: relative;
   width: 240px;
@@ -143,6 +149,10 @@
     font-size: 14px;
     line-height: 160%;
     text-align: center;
+  }
+
+  .modal__checkbox {
+    transform: translateX(-142px);
   }
 
   .modal__checkbox-label {
