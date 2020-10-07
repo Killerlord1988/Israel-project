@@ -5,11 +5,12 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="preload" href="fonts/FiraSans-Bold.woff2" as="font">
-  <link rel="preload" href="fonts/FiraSans-Medium.woff2" as="font">
-  <link rel="preload" href="fonts/FiraSans-Regular.woff2" as="font">
-  <link rel="preload" href="fonts/Montserrat-Bold.woff2" as="font">
-  <link rel="preload" href="fonts/Raleway-ExtraBold.woff2" as="font">
+  <link rel="preload" href="css/style.min.css" as="style" crossorigin="anonymous">
+  <link rel="preload" href="fonts/FiraSans-Bold.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/FiraSans-Medium.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/FiraSans-Regular.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/Montserrat-Bold.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/Raleway-ExtraBold.woff2" as="font" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
   <link rel="stylesheet" href="http://kenwheeler.github.io/slick/slick/slick-theme.css">
   <link rel="stylesheet" href="css/style.min.css">
@@ -51,7 +52,9 @@
       <div class="about__player">
 
         <picture>
+          <source type="image/webp" media="(max-width: 767px)" srcset="img/preview-mobile@1x.webp 1x, img/preview-mobile@2x.webp 2x">
           <source media="(max-width: 767px)" srcset="img/preview-mobile@1x.png 1x, img/preview-mobile@2x.png 2x">
+          <source type="image/webp" srcset="img/preview-desktop@1x.webp 1x, img/preview-desktop@2x.webp 2x">
           <img class="about__player-preview" src="img/preview-desktop@1x.png" srcset="img/preview-desktop@2x.png 2x" alt="Превью для плеера" width="870" height="460">
         </picture>
 
@@ -181,36 +184,47 @@
       <div class="about-life__slider container">
         <div class="about-life__slide about-life__slide--slide1">
           <picture>
+          <source type="image/webp" media="(max-width: 1023px)" srcset="img/live-israel-1-mobile@1x.webp 1x, img/live-israel-1-mobile@2x.webp 2x">
             <source media="(max-width: 1023px)" srcset="img/live-israel-1-mobile@1x.png 1x, img/live-israel-1-mobile@2x.png 2x">
-            <img class="about-life__slide-img" src="img/live-israel-1-desktop@1x.png" srcset="img/live-israel-1-desktop@2x.png 2x" alt="Экскурсии" width="482" height="732">
+            <source type="image/webp" srcset="img/live-israel-1-desktop@1x.webp 1x, img/live-israel-1-desktop@2x.webp 2x">
+              <img class="about-life__slide-img" src="img/live-israel-1-desktop@1x.png" srcset="img/live-israel-1-desktop@2x.png 2x" alt="Экскурсии" width="482" height="732">
           </picture>
           <p class="about-life__slide-text">Экскурсии по Израилю и знакомство с его историей</p>
         </div>
         <div class="about-life__slide about-life__slide--slide2">
           <picture>
+          <source type="image/webp" media="(max-width: 1023px)" srcset="img/live-israel-2-mobile@1x.webp 1x, img/live-israel-2-mobile@2x.webp 2x">
             <source media="(max-width: 1023px)" srcset="img/live-israel-2-mobile@1x.png 1x, img/live-israel-2-mobile@2x.png 2x">
-            <img class="about-life__slide-img" src="img/live-israel-2-desktop@1x.png" srcset="img/live-israel-2-desktop@2x.png 2x" alt="Изучение иврита" width="211" height="318">
+            <source type="image/webp" srcset="img/live-israel-2-desktop@1x.webp 1x, img/live-israel-2-desktop@2x.webp 2x">
+
+              <img class="about-life__slide-img" src="img/live-israel-2-desktop@1x.png" srcset="img/live-israel-2-desktop@2x.png 2x" alt="Изучение иврита" width="211" height="318">
           </picture>
           <p class="about-life__slide-text">Изучение иврита</p>
         </div>
         <div class="about-life__slide about-life__slide--slide3">
           <picture>
+          <source type="image/webp" media="(max-width: 1023px)" srcset="img/live-israel-3-mobile@1x.webp 1x, img/live-israel-3-mobile@2x.webp 2x">
             <source media="(max-width: 1023px)" srcset="img/live-israel-3-mobile@1x.png 1x, img/live-israel-3-mobile@2x.png 2x">
-            <img class="about-life__slide-img" src="img/live-israel-3-desktop@1x.png" srcset="img/live-israel-3-desktop@2x.png 2x" alt="Обучение современным навыкам и профессиям" width="411" height="318">
+              <source type="image/webp" srcset="img/live-israel-3-desktop@1x.webp 1x, img/live-israel-3-desktop@2x.webp 2x">
+              <img class="about-life__slide-img" src="img/live-israel-3-desktop@1x.png" srcset="img/live-israel-3-desktop@2x.png 2x" alt="Обучение современным навыкам и профессиям" width="411" height="318">
           </picture>
           <p class="about-life__slide-text">Обучение современным навыкам и профессиям</p>
         </div>
         <div class="about-life__slide about-life__slide--slide4">
           <picture>
+          <source type="image/webp" media="(max-width: 1023px)" srcset="img/live-israel-4-mobile@1x.webp 1x, img/live-israel-4-mobile@2x.webp 2x">
             <source media="(max-width: 1023px)" srcset="img/live-israel-4-mobile@1x.png 1x, img/live-israel-4-mobile@2x.png 2x">
-            <img class="about-life__slide-img" src="img/live-israel-4-desktop@1x.png" srcset="img/live-israel-4-desktop@2x.png 2x" alt="Совместные творческие проекты с израильской молодёжью" width="411" height="318">
+              <source type="image/webp" srcset="img/live-israel-4-desktop@1x.webp 1x, img/live-israel-4-desktop@2x.webp 2x">
+              <img class="about-life__slide-img" src="img/live-israel-4-desktop@1x.png" srcset="img/live-israel-4-desktop@2x.png 2x" alt="Совместные творческие проекты с израильской молодёжью" width="411" height="318">
           </picture>
           <p class="about-life__slide-text">Совместные творческие проекты с израильской молодёжью</p>
         </div>
         <div class="about-life__slide about-life__slide--slide5">
           <picture>
+          <source type="image/webp" media="(max-width: 1023px)" srcset="img/live-israel-5-mobile@1x.webp 1x, img/live-israel-5-mobile@2x.webp 2x">
             <source media="(max-width: 1023px)" srcset="img/live-israel-5-mobile@1x.png 1x, img/live-israel-5-mobile@2x.png 2x">
-            <img class="about-life__slide-img" src="img/live-israel-5-desktop@1x.png" srcset="img/live-israel-5-desktop@2x.png 2x" alt="Развитие лидерства" width="211" height="318">
+              <source type="image/webp" srcset="img/live-israel-5-desktop@1x.webp 1x, img/live-israel-5-desktop@2x.webp 2x">
+              <img class="about-life__slide-img" src="img/live-israel-5-desktop@1x.png" srcset="img/live-israel-5-desktop@2x.png 2x" alt="Развитие лидерства" width="211" height="318">
           </picture>
           <p class="about-life__slide-text">Развитие лидерства</p>
         </div>
@@ -621,8 +635,10 @@
     </div>
     <div class="more-details__wrapper-map">
       <picture>
+        <source type="image/webp" media="(max-width: 767px)" srcset="img/map-mobile.webp">
         <source media="(max-width: 767px)" srcset="img/map-mobile.png">
-        <img class="more-details__wrapper-map-img" src="img/map-desktop.png" alt="карта офиса">
+          <source type="image/webp" srcset="img/map-desktop.webp">
+          <img class="more-details__wrapper-map-img" src="img/map-desktop.png" alt="карта офиса">
       </picture>
     </div>
   </div>
