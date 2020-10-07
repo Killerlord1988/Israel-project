@@ -35,11 +35,7 @@
   cursor: pointer;
 }
 
-.programs__label[for="program-1"]::before,
-.programs__label[for="program-2"]::before,
-.programs__label[for="program-3"]::before,
-.programs__label[for="program-4"]::before,
-.programs__label[for="program-5"]::before {
+.programs__label::before {
   position: absolute;
   content: "";
 
@@ -209,11 +205,7 @@
     opacity: 0.4;
   }
 
-  .programs__label[for="program-1"]::before,
-  .programs__label[for="program-2"]::before,
-  .programs__label[for="program-3"]::before,
-  .programs__label[for="program-4"]::before,
-  .programs__label[for="program-5"]::before {
+  .programs__label::before {
     left: 12px;
   }
 
