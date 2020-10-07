@@ -1,26 +1,19 @@
 .want-go {
   position: relative;
   width: 100%;
-  background-image: url("../img/bg-girl-flag-@1x.png");
-  background-size: 818px auto;
+  background: url("../img/bg-girl-flag-@1x.png"),
+    url("../img/bg-backpack.png");
+  background-size: 818px auto, 140px auto;
   background-repeat: no-repeat;
-  background-position: right top;
+  background-position: right top, left 120px;
   margin-bottom: 140px;
 }
 
 @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
   .want-go {
-    background-image: url("../img/bg-girl-flag-@2x.png");
+    background-image: url("../img/bg-girl-flag-@2x.png"),
+      url("../img/bg-backpack.png");
   }
-}
-
-.want-go__bagpack {
-  position: absolute;
-  top: 120px;
-  width: 167px;
-  height: 245px;
-  background-image: url("../img/bg-backpack.png");
-  background-repeat: no-repeat;
 }
 
 .want-go__wrapper-callback {
@@ -77,19 +70,14 @@
 
 @media (max-width: 1145px) {
   .want-go {
-    background-image: url("../img/bg-girl-flag-@1x.png");
+    background-image: url("../img/bg-girl-flag-@1x.png"),
+      url("../img/bg-backpack.png");
 
-    background-position: center bottom;
-    background-size: 434px auto;
+    background-position: center bottom, left 0;
+    background-size: 434px auto, 120px auto;
 
     min-height: 600px;
     margin-bottom: 80px;
-  }
-
-  .want-go__bagpack {
-    width: 120px;
-    height: 242px;
-    top: -70px;
   }
 
   .want-go__wrapper-callback {

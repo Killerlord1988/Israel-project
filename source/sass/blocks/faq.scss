@@ -2,10 +2,11 @@
   position: relative;
   width: 100%;
   background-image: url("../img/faq@1x.png"),
-    url("../img/bg-watercolor-faq.png");
-  background-size: 645px auto, cover;
+    url("../img/bg-watercolor-faq.png"),
+    url("../img/bg-bag.png");
+  background-size: 645px auto, cover, 197px auto;
   background-repeat: no-repeat, no-repeat;
-  background-position: top right, center center;
+  background-position: top right, center center, left 550px;
   counter-reset: section;
   margin-bottom: 85px;
 }
@@ -13,18 +14,9 @@
 @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
   .faq {
     background-image: url("../img/faq@2x.png"),
-      url("../img/bg-watercolor-faq.png");
+      url("../img/bg-watercolor-faq.png"),
+      url("../img/bg-bag.png");
   }
-}
-
-.faq__bag {
-  position: absolute;
-  bottom: 20px;
-  left: 0;
-  width: 197px;
-  height: 177px;
-  background-image: url("../img/bg-bag.png");
-  background-repeat: no-repeat;
 }
 
 .faq__wrapper {
@@ -115,16 +107,11 @@
 
 @media (max-width: 1100px) {
   .faq {
-    background: none;
+    background-image: url("../img/bg-bag.png");
+    background-size: 194px auto;
+    background-position: -30px 340px;
     min-height: 450px;
     margin-bottom: 80px;
-  }
-
-  .faq__bag {
-    bottom: 100px;
-    left: -30px;
-    width: 194px;
-    height: 177px;
   }
 
   .faq__wrapper {

@@ -1,23 +1,13 @@
 .about-life {
   position: relative;
   width: 100%;
-  background-image: url("../img/bg-watercolor-live-israel.png");
+  background-image: url("../img/bg-watercolor-live-israel.png"),
+    url("../img/bg-watch.png");
   background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
+  background-position: center, right 550px;
+  background-size: contain, 90px auto;
   margin-bottom: 190px;
 }
-
-.about-life__watch {
-  position: absolute;
-  top: 550px;
-  right: 0;
-  width: 90px;
-  height: 148px;
-  background-image: url("../img/bg-watch.png");
-  background-repeat: no-repeat;
-}
-
 
 .about-life__title {
   margin-top: 0;
@@ -128,6 +118,7 @@
 @media (max-width: $tablet-width) {
   .about-life {
     margin-bottom: 58px;
+    background-image: none;
   }
 
   .about-life__watch {
