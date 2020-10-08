@@ -4,7 +4,7 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  margin-bottom: 60px;
+  margin-bottom: 55px;
 }
 
 .more-details__wrapper {
@@ -25,6 +25,7 @@
 
 .more-details__title {
   text-align: left;
+  margin-top: 0;
   margin-bottom: 48px;
 }
 
@@ -126,6 +127,8 @@
   font-size: 17px;
   line-height: 170%;
   opacity: 0.87;
+  margin-top: 30px;
+  margin-bottom: 7px;
 }
 
 .more-details__wrapper-map {
@@ -170,7 +173,7 @@
 
 .more-details__input-field-name,
 .more-details__input-field-phone {
-  padding: 19px 25px;
+  padding: 19px 37px;
   border: 2px solid #e3e3e3;
   border-radius: 80px;
   outline: none;
