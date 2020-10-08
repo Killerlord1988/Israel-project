@@ -29,6 +29,7 @@
 
 .faq__title {
   text-align: left;
+  margin-bottom: 10px;
 }
 
 .faq__list {
@@ -49,14 +50,14 @@
 
 .faq__question {
   margin: 0;
-  padding-top: 25px;
-  padding-bottom: 28px;
+  padding-top: 38px;
+  padding-bottom: 32px;
   padding-left: 29px;
   padding-right: 29px;
   position: relative;
   font-size: 17px;
   line-height: 150%;
-  max-width: 400px;
+  max-width: 420px;
 }
 
 .faq__question::before {
@@ -64,7 +65,7 @@
   counter-increment: section;
   content: counter(section);
   left: 0;
-  top: 16px;
+  top: 23px;
   font-weight: bold;
   font-size: 28px;
   line-height: 170%;
@@ -81,15 +82,15 @@
   height: 11px;
 
   background-image: url("../img/icon-arrow.svg");
-  top: 40px;
-  right: -120px;
+  top: 46px;
+  right: -102px;
   transition: 0.2s;
 }
 
 .faq__answer {
   margin: 0;
   padding-right: 80px;
-  padding-bottom: 32px;
+  padding-bottom: 20px;
   font-size: 15px;
   line-height: 140%;
   color: $color-black;
