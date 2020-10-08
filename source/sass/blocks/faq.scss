@@ -116,7 +116,7 @@
   }
 
   .faq__wrapper {
-    padding-bottom: 50px;
+    padding-bottom: 0;
   }
 
   .faq__wrapper-question {
@@ -125,12 +125,13 @@
 
   .faq__title {
     text-align: center;
+    margin-bottom: 2px;
   }
 
   .faq__question {
     margin: 0;
-    padding-top: 13px;
-    padding-bottom: 32px;
+    padding-top: 38px;
+    padding-bottom: 20px;
     padding-left: 25px;
     padding-right: 25px;
     font-size: 16px;
@@ -139,11 +140,11 @@
   }
 
   .faq__question::before {
-    top: 0;
+    top: 25px;
   }
 
   .faq__question::after {
-    top: 20px;
+    top: 45px;
     right: 0;
     transition: 0.2s;
   }

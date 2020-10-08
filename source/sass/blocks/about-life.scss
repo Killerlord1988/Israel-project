@@ -14,6 +14,10 @@
   margin-bottom: 30px;
 }
 
+.about-life__title br {
+  display: none;
+}
+
 .about-life__text {
   max-width: 720px;
   text-align: center;
@@ -131,6 +135,10 @@
     margin-bottom: 24px;
   }
 
+  .about-life__title br {
+    display: block;
+  }
+
   .about-life__text {
     font-size: 16px;
     line-height: 160%;
@@ -171,18 +179,25 @@
   }
 
   .slick-dots {
+    bottom: -18px;
     margin-left: -16px;
     margin-right: -16px;
   }
 
+  .slick-dots li {
+    width: 6px;
+    height: 6px;
+  }
+
   .slick-dots li button::before {
-    font-size: 8px;
+    text-align: center;
+    font-size: 7px;
     color: $color-black;
     opacity: 0.2;
   }
 
   .slick-dots li.slick-active button::before {
-    font-size: 10px;
+    font-size: 8px;
     color: $color-yellow;
   }
 }
