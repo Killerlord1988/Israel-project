@@ -159,4 +159,11 @@
     margin-left: auto;
     margin-right: auto;
   }
+
+  .modal__input-field .input-invalid {
+    position: absolute;
+    left: 25px;
+    top: 40px;
+    z-index: 10;
+  }
 }
