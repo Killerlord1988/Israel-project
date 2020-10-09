@@ -163,6 +163,10 @@
 }
 
 @media (max-width: 1100px) {
+  .review {
+    margin-bottom: 77px;
+  }
+
   .review__slide {
     flex-direction: column;
   }
@@ -174,22 +178,39 @@
     background-repeat: no-repeat;
   }
 
+  .review__slider {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
   .review__wrapper-info {
     max-width: none;
     display: flex;
     flex-direction: column;
   }
 
+  .review__title {
+    margin-bottom: 23px;
+  }
+
   .review__avatar {
+    width: 240px;
+    margin-bottom: 12px;
+    min-width: auto;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 8px;
-    min-width: auto;
   }
 
   .review__avatar-img {
+    display: block;
     width: 240px;
     height: auto;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .review__name {
+    margin-top: 0;
   }
 
   .review__program {
@@ -197,6 +218,7 @@
     line-height: 160%;
     display: flex;
     flex-direction: column;
+    margin-bottom: 10px;
   }
 
   .review__program-naming {
@@ -207,6 +229,7 @@
   .review__text {
     font-size: 16px;
     line-height: 160%;
+    margin-bottom: 10px;
   }
 
   .review__see-more {
@@ -222,7 +245,7 @@
   .review__slider-nav--mobile {
     display: flex;
     justify-content: center;
-    margin-bottom: 24px;
+    margin-bottom: 16px;
   }
 
   .review__slider-nav--desktop {
