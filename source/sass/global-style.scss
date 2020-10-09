@@ -67,33 +67,3 @@ img {
 a {
   text-decoration: none;
 }
-
-.input__block {
-  position: relative;
-}
-
-.input-invalid {
-  position: absolute;
-  display: none;
-
-  font-size: 13px;
-  line-height: 150%;
-  color: $color-error;
-  opacity: 0.75;
-}
-
-.input-data:invalid:not(:placeholder-shown) {
-  border-color: $color-error;
-}
-
-.input-data:valid:not(:placeholder-shown) {
-  border-color: $color-black;
-}
-
-.input-data:focus {
-  border-color: $color-yellow;
-}
-
-.input-data:invalid:not(:placeholder-shown) ~ .input-invalid {
-  display: block;
-}

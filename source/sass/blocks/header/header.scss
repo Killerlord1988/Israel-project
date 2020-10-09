@@ -41,7 +41,15 @@
     height: 42px;
   }
 
+  .header__phone,
+  .header__request-call {
+    font-size: 14px;
+    line-height: 17px;
+    font-variant: small-caps;
+    text-transform: none;
+  }
+
   .header__phone {
-    margin-bottom: 10px;
+    margin-bottom: 6px;
   }
 }
