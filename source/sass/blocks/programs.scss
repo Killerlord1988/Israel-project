@@ -145,7 +145,13 @@
   opacity: 0.87;
 }
 
-@media (max-width: $mobile-width) {
+@media (max-width: $tablet-width) {
+  .programs {
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 1145px) {
   .programs {
     background-size: 320px auto;
     background-position: right 135px;
