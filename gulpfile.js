@@ -9,6 +9,7 @@ var autoprefixer = require("autoprefixer");
 var server = require("browser-sync").create();
 var csso = require("gulp-csso");
 var uglify = require("gulp-uglify");
+var babel = require('gulp-babel');
 var concat = require('gulp-concat');
 var rename = require("gulp-rename");
 var imagemin = require("gulp-imagemin");
@@ -33,6 +34,8 @@ gulp.task("css", function () {
 
 gulp.task("script-min", function() {
   return gulp.src([
+    "source/js/lib/jquery-1.8.3.js",
+    "source/js/lib/slick.js",
     "source/js/lib/dragscroll.js",
     "source/js/lib/svg4everybody.js",
     "source/js/lib/jquery.maskedinput.js",
@@ -46,6 +49,7 @@ gulp.task("script-min", function() {
   .pipe(sourcemap.init())
   // .pipe(gulp.dest("build/js"))
   .pipe(concat('script.js'))
+  .pipe(babel())
   .pipe(uglify())
   .pipe(rename({suffix: ".min"}))
   .pipe(sourcemap.write("."))
