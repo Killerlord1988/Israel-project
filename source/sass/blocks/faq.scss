@@ -8,7 +8,7 @@
   background-repeat: no-repeat, no-repeat;
   background-position: top right, center center, left 450px;
   counter-reset: section;
-  margin-bottom: 85px;
+  padding-bottom: 16px;
 }
 
 @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
@@ -20,7 +20,7 @@
 }
 
 .faq__wrapper {
-  padding-bottom: 60px;
+  padding-bottom: 87px;
 }
 
 .faq__wrapper-question {
@@ -119,7 +119,7 @@
     background-size: 174px auto;
     background-position: -30px 340px;
     min-height: 450px;
-    margin-bottom: 80px;
+    padding-bottom: 40px;
   }
 
   .faq__wrapper {

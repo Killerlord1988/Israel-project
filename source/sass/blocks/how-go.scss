@@ -8,8 +8,9 @@
   background-repeat: no-repeat;
   background-position: left top, left top, right 170px;
   counter-reset: section;
-  margin-bottom: 73px;
+  padding-bottom: 43px;
   padding-top: 1px;
+  margin-top: 142px;
 }
 
 @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
@@ -121,7 +122,8 @@
     background-size: 215px auto;
     background-position: right 280px;
     min-height: auto;
-    margin-bottom: 82px;
+    margin-top: 79px;
+    padding-bottom: 36px;
   }
 
   .how-go__wrapper-info {

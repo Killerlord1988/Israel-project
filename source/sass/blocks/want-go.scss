@@ -6,7 +6,7 @@
   background-size: 818px auto, 140px auto;
   background-repeat: no-repeat;
   background-position: right top, left 120px;
-  margin-bottom: 140px;
+  margin-bottom: 0;
 }
 
 @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
@@ -18,6 +18,7 @@
 
 .want-go__wrapper-callback {
   padding-top: 210px;
+  padding-bottom: 150px;
   margin-left: 200px;
 }
 
@@ -42,7 +43,6 @@
 
 .want-go__form {
   display: flex;
-  padding-bottom: 150px;
 }
 
 .want-go__input-field {
@@ -77,7 +77,6 @@
     background-size: 434px auto, 120px auto;
 
     min-height: 600px;
-    margin-bottom: 80px;
   }
 
   .want-go__wrapper-callback {
