@@ -6,7 +6,8 @@
   background-repeat: no-repeat;
   background-position: center, right 550px;
   background-size: contain, 90px auto;
-  margin-bottom: 150px;
+  padding-bottom: 150px;
+  padding-top: 30px;
 }
 
 .about-life__title {
@@ -124,7 +125,7 @@
 
 @media (max-width: $tablet-width) {
   .about-life {
-    margin-bottom: 58px;
+    padding-bottom: 27px;
     background-image: none;
   }
 
