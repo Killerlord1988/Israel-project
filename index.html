@@ -159,7 +159,7 @@
 
     <section class="how-go">
       <div class="how-go__wrapper-info container">
-        <h2 class="how-go__title main__title">как проехать</h2>
+        <h2 class="how-go__title main__title">как поехать</h2>
         <p class="how-go__text">Чтобы узнать подробнее о программе, свяжитесь с координатором в вашем городе. Вы
           получите актуальные сведения о доступных программах и городах, в которых можете пройти программу.</p>
         <p class="how-go__instruction">Чтобы иметь возможность получить грант на обучение от 4200 до 8400$, вы должны:
@@ -177,7 +177,7 @@
     </section>
 
     <section class="about-life">
-      <h2 class="about-life__title main__title container">Жизнь в израиле</h2>
+      <h2 class="about-life__title main__title container">Жизнь <br>в израиле</h2>
       <p class="about-life__text container">Помимо учёбы, в рамках программе у вас будет возможность путешествовать по
         стране и
         познакомиться с богатой культурно-исторической жизнью Израиля и его жителей.</p>
@@ -310,13 +310,6 @@
                 <p class="review__program"><span class="review__program-naming">Программа:</span>Арт-Тель,
                   февраль-сентябрь
                   2017</p>
-                <p class="review__text">Долго выбирая программу, на которую ехать - я определилась, взяла на 5 месяцев
-                  «иврит
-                  как культура». Мне очень повезло оказаться в надежных и заботливых руках Анны, Юлии и Олега.</p>
-                <p class="review__text">С первой же встречи тебе дают понять - что ты не один, у тебя есть практически
-                  круглосуточная поддержка по любым вопросам. Тебе предоставляют готовое удобное расписание, жилье,
-                  приятные
-                  встречи, языковой курс а еще и поездки всей программой в разные уголки страны.</p>
                 <p class="review__text">Долго выбирая программу, на которую ехать - я определилась, взяла на 5 месяцев
                   «иврит
                   как культура». Мне очень повезло оказаться в надежных и заботливых руках Анны, Юлии и Олега.</p>
@@ -687,8 +680,8 @@
           <h2 class="modal__title">Заказать звонок</h2>
           <p class="modal__text">Оставьте ваши контактные данные, мы свяжемся с вами в течение рабочего дня и обязательно поможем найти ответ на ваш вопрос!</p>
           <form class="modal__data-block" action="https://echo.htmlacademy.ru" method="POST">
-            <input class="modal__input-field modal__input-field-name" name="name" type="text" placeholder="имя" required="">
-            <input class="modal__input-field modal__input-field-phone mask-phone" name="phone" type="text" placeholder="телефон" id="phone" required="">
+            <div class="input-block"><input class="modal__input-field modal__input-field-name input-data" name="name" type="text" placeholder="имя" required=""><span class="input-invalid">Данные не верны</span></div>
+            <div class="input-block"><input class="modal__input-field modal__input-field-phone input-data mask-phone" name="phone" type="text" placeholder="телефон" id="phone" required=""><span class="input-invalid">Данные не верны</span></div>
             <button class="modal__button button submit" type="submit">перезвоните мне</button>
             <input class="modal__checkbox visually-hidden" type="checkbox" name="person__success" id="person__success" required="">
             <label class="modal__checkbox-label" for="person__success">Нажимая на кнопку, вы даёте согласие на обработку персональных данных</label>
@@ -712,19 +705,20 @@
     </section>
   </template>
 
-  <!-- <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script> -->
+  <!-- <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
   <script src="js/lib/jquery-1.8.3.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-  <!-- <script src="js/lib/dragscroll.min.js"></script>
-    <script src="js/lib/svg4everybody.min.js"></script>
-    <script src="js/lib/jquery.maskedinput.min.js"></script>
-    <script src="js/scrolldown.min.js"></script>
-    <script src="js/tabs.min.js"></script>
-    <script src="js/slider.min.js"></script>
-    <script src="js/modal.min.js"></script>
-    <script src="js/accordion.min.js"></script>
-    <script src="js/main.min.js"></script> -->
-    <script src="js/script.min.js"></script>
+  <script src="js/lib/slick.min.js"></script>
+  <script src="js/lib/dragscroll.min.js"></script>
+  <script src="js/lib/svg4everybody.min.js"></script>
+  <script src="js/lib/jquery.maskedinput.min.js"></script>
+  <script src="js/scrolldown.min.js"></script>
+  <script src="js/tabs.min.js"></script>
+  <script src="js/slider.min.js"></script>
+  <script src="js/modal.min.js"></script>
+  <script src="js/accordion.min.js"></script>
+  <script src="js/main.min.js"></script> -->
+  <script src="js/script.min.js"></script>
 </body>
 
 </html>

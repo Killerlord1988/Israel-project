@@ -84,6 +84,8 @@ callRequest.addEventListener('click', function (evt) {
     var modal = document.body.querySelector('main .modal');
     modal.parentNode.removeChild(modal);
     document.body.querySelector('main').prepend(success);
+    var successBtn = document.querySelector('.success__button');
+    successBtn.focus();
     addModalHandler();
   });
 });
@@ -97,6 +99,8 @@ wantGo.addEventListener('submit', function (evt) {
   arrData.push(inputPhone.value);
   localStorage.setItem('personData', JSON.stringify(arrData));
   document.body.querySelector('main').prepend(success);
+  var successBtn = document.querySelector('.success__button');
+  successBtn.focus();
   addModalHandler();
 });
 
@@ -111,5 +115,7 @@ moreDetails.addEventListener('submit', function (evt) {
   });
   localStorage.setItem('personData', JSON.stringify(arrData));
   document.body.querySelector('main').prepend(success);
+  var successBtn = document.querySelector('.success__button');
+  successBtn.focus();
   addModalHandler();
 });
