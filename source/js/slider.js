@@ -18,6 +18,7 @@ $(window).on('load', function () {
   $('.review__slider').slick({
     dots: false,
     infinite: true,
+    rows: 0,
     speed: 100,
     slidesToShow: 1,
     // autoplay: true,
