@@ -156,7 +156,7 @@
   }
 }
 
-@media (max-width: 1145px) {
+@media (max-width: $mobile-width) {
   .programs {
     background-size: 320px auto;
     background-position: right 135px;
