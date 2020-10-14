@@ -27,10 +27,14 @@ $(window).on('load', function () {
     prevArrow: $('.review__slider-arrow--prev'),
     nextArrow: $('.review__slider-arrow--next'),
   })
-// одинаковая высота слайдеров
-  .on('setPosition', function (event, slick) {
-    slick.$slides.css('height', slick.$slideTrack.height() + 'px');
-  });
+});
+
+  // одинаковая высота слайдеров
+$('.review__slider').on('setPosition', function () {
+    $(this).find('.review__slide-wrapper').height('auto');
+    var slickTrack = $(this).find('.slick-track');
+    var slickTrackHeight = $(slickTrack).height();
+    $(this).find('.review__slide-wrapper').css('height', slickTrackHeight + 'px');
 });
 
 $('.review__slider').on('init reInit afterChange', function (event, slick, currentSlide, nextSlide) {
