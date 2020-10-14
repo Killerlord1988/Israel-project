@@ -97,6 +97,7 @@
     max-width: none;
     font-size: 16px;
     margin-bottom: 21px;
+    text-align: center;
   }
 
   .want-go__form {
@@ -125,5 +126,11 @@
     width: 264px;
     margin-left: auto;
     margin-right: auto;
+  }
+}
+
+@media (max-width: 375px) {
+  .want-go__text {
+    text-align: left;
   }
 }
