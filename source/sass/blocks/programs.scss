@@ -107,10 +107,6 @@
   opacity: 1;
 }
 
-.programs__btn:focus ~ .programs__info-slider .programs__label {
-  outline: 1px solid $color-black;
-}
-
 .programs__label--checked::after {
   position: absolute;
   content: "";
