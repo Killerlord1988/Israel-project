@@ -6,11 +6,10 @@
     url("../img/bg-stamp.png");
   background-size: 581px auto, contain, 167px auto;
   background-repeat: no-repeat;
-  background-position: left top, left top, right 170px;
+  background-position: 10px 143px, left top, right 362px;
   counter-reset: section;
   padding-bottom: 43px;
-  padding-top: 1px;
-  margin-top: 142px;
+  padding-top: 142px;
 }
 
 @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
@@ -120,9 +119,9 @@
   .how-go {
     background-image: url("../img/bg-stamp-mobile.png");
     background-size: 215px auto;
-    background-position: right 280px;
+    background-position: right 354px;
     min-height: auto;
-    margin-top: 79px;
+    padding-top: 79px;
     padding-bottom: 36px;
   }
 

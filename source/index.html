@@ -6,11 +6,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="preload" href="css/style.min.css" as="style" crossorigin="anonymous">
-  <link rel="preload" href="fonts/FiraSans-Bold.woff2" as="font" crossorigin="anonymous">
-  <link rel="preload" href="fonts/FiraSans-Medium.woff2" as="font" crossorigin="anonymous">
-  <link rel="preload" href="fonts/FiraSans-Regular.woff2" as="font" crossorigin="anonymous">
-  <link rel="preload" href="fonts/Montserrat-Bold.woff2" as="font" crossorigin="anonymous">
-  <link rel="preload" href="fonts/Raleway-ExtraBold.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="js/script.min.js" as="script">
+  <link rel="preload" href="fonts/FiraSans-Bold.woff2" as="font">
+  <link rel="preload" href="fonts/FiraSans-Medium.woff2" as="font">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
   <link rel="stylesheet" href="http://kenwheeler.github.io/slick/slick/slick-theme.css">
   <link rel="stylesheet" href="css/style.min.css">
@@ -20,10 +18,6 @@
 </head>
 
 <body>
-  <!-- <div style="display: none;">
-    <include src="build/img/sprite_auto.svg"></include>
-  </div> -->
-
   <div class="header-promo">
 
     <header class="header-promo__header header container">
@@ -157,7 +151,7 @@
         <p class="want-go__text">Оставьте свой телефон и мы свяжемся с вами, подберём куратора и ответим на все вопросы!
         </p>
         <form class="want-go__form" action="https://echo.htmlacademy.ru" method="POST">
-          <div class="input-block"><input class="want-go__input-field input-data mask-phone" name="phone" type="tel" placeholder="телефон" required><span class="input-invalid">Данные не верны</span></div>
+          <div class="input-block"><input class="want-go__input-field input-data mask-phone" name="phone" type="tel" placeholder="телефон" required id="want-go__input-field"><span class="input-invalid">Данные не верны</span><label class="want-go__input-label visually-hidden" for="want-go__input-field">Введите номер телефона</label></div>
           <button class="want-go__submit button" type="submit">перезвоните мне</button>
         </form>
       </div>
@@ -636,15 +630,15 @@
     </section>
 
     <section class="more-details">
-      <div class="more-details__wrapper">
-        <div class="more-details__wrapper-curator-map container">
+      <div class="more-details__wrapper container">
+        <div class="more-details__wrapper-curator-map">
       <div class="more-details__wrapper-curator ">
         <h2 class="more-details__title main__title">Узнать подробности</h2>
         <div class="more-details__location"><span class="more-details__location-text">Ваш город:</span><span
             class="more-details__location-city">новосибирск</span></div>
         <div class="more-details__curator-wrapper">
           <div class="more-details__curator-avatar"><img class="more-details__curator-avatar-img" src="img/curator.png"
-              alt="Ваш куратор"></div>
+              alt="Ваш куратор" width="112" height="112"></div>
           <div class="more-details__curator-info"><span class="more-details__curator-text-info">Ваш куратор:</span><span
               class="more-details__curator-city">Анна Горелик</span>
               <p class="more-details__curator-location">Новосибирск, ул. Щетинкина 68, культурный центр «Бейт Менахем»</p>
@@ -674,18 +668,18 @@
         <source type="image/webp" media="(max-width: 767px)" srcset="img/map-mobile.webp">
         <source media="(max-width: 767px)" srcset="img/map-mobile.png">
           <source type="image/webp" srcset="img/map-desktop.webp">
-          <img class="more-details__wrapper-map-img" src="img/map-desktop.png" alt="карта офиса">
+          <img class="more-details__wrapper-map-img" src="img/map-desktop.png" alt="карта офиса" width="702" height="448">
       </picture>
     </div>
   </div>
-      <div class="more-details__wrapper-call container">
+      <div class="more-details__wrapper-call">
         <div class="more-details__call-text-wrapper">
           <p class="more-details__call-text-question">Оставьте ваши контакты, если у вас остались вопросы — мы на них ответим!</p>
           <p class="more-details__call-text-security">Мы не передаём данные третьим лицам. Ваши данные будут в безопасности и вам не придёт спам от нас!</p>
         </div>
         <form class="more-details__form" action="https://echo.htmlacademy.ru" method="POST">
-          <div class="input-block"><input class="more-details__input-field-name input-data" name="name" type="text" placeholder="имя" required><span class="input-invalid">Данные не верны</span></div>
-          <div class="input-block"><input class="more-details__input-field-phone input-data mask-phone" name="phone" type="tel" placeholder="телефон" required><span class="input-invalid">Данные не верны</span></div>
+          <div class="input-block"><input class="more-details__input-field-name input-data" name="name" type="text" placeholder="имя" required id="more-details__input-field-name"><span class="input-invalid">Данные не верны</span><label class="more-details__input-label-name visually-hidden" for="more-details__input-field-name">Введите имя</label></div>
+          <div class="input-block"><input class="more-details__input-field-phone input-data mask-phone" name="phone" type="tel" placeholder="телефон" required id="more-details__input-field-phone"><span class="input-invalid">Данные не верны</span><label class="more-details__input-label-phone visually-hidden" for="more-details__input-field-phone">Введите номер телефона</label></div>
           <button class="more-details__submit button" type="submit">перезвоните мне</button>
         </form>
       </div>
@@ -748,19 +742,6 @@
     </section>
   </template>
 
-  <!-- <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-  <script src="js/lib/jquery-1.8.3.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-  <script src="js/lib/slick.min.js"></script>
-  <script src="js/lib/dragscroll.min.js"></script>
-  <script src="js/lib/svg4everybody.min.js"></script>
-  <script src="js/lib/jquery.maskedinput.min.js"></script>
-  <script src="js/scrolldown.min.js"></script>
-  <script src="js/tabs.min.js"></script>
-  <script src="js/slider.min.js"></script>
-  <script src="js/modal.min.js"></script>
-  <script src="js/accordion.min.js"></script>
-  <script src="js/main.min.js"></script> -->
   <script src="js/script.min.js"></script>
 </body>
 

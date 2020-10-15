@@ -4,6 +4,7 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  padding-top: 50px;
   padding-bottom: 55px;
 }
 
@@ -197,6 +198,7 @@
 @media (max-width: 1145px) {
   .more-details {
     background-image: none;
+    padding-top: 40px;
     padding-bottom: 64px;
   }
 
