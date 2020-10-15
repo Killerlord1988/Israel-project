@@ -1,6 +1,6 @@
 'use strict';
 $(window).on('load resize', function () {
-  if ($(window).width() <= 1006) {
+  if ($(window).width() <= 1023) {
     $('.about-life__slider').slick({
       dots: true,
       infinite: true,
