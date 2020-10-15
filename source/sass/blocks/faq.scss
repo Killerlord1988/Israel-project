@@ -6,8 +6,9 @@
     url("../img/bg-bag.png");
   background-size: 645px auto, cover, 197px auto;
   background-repeat: no-repeat, no-repeat;
-  background-position: top right, center center, left 450px;
+  background-position: right 35px, center center, left 450px;
   counter-reset: section;
+  padding-top: 35px;
   padding-bottom: 16px;
 }
 
@@ -29,6 +30,7 @@
 
 .faq__title {
   text-align: left;
+  margin-top: 0;
   margin-bottom: 10px;
 }
 
@@ -119,6 +121,7 @@
     background-size: 174px auto;
     background-position: -30px 340px;
     min-height: 450px;
+    padding-top: 27px;
     padding-bottom: 40px;
   }
 
