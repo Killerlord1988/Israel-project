@@ -236,9 +236,9 @@
 
   .more-details__wrapper-map {
     width: auto;
-    margin-bottom: 10px;
-    margin-left: -16px;
-    margin-right: -16px;
+    margin-bottom: 20px;
+    margin-left: -12px;
+    margin-right: -12px;
   }
 
   .more-details__wrapper-map-img {
@@ -248,6 +248,7 @@
 
   .more-details__call-text-security {
     margin-bottom: 30px;
+    text-align: center;
   }
 
   .more-details__wrapper-call {
@@ -262,6 +263,7 @@
   .more-details__call-text-question {
     font-size: 16px;
     line-height: 150%;
+    text-align: center;
   }
 
   .more-details__form {
@@ -296,5 +298,15 @@
     width: 264px;
     margin-left: auto;
     margin-right: auto;
+  }
+}
+
+@media (max-width: 375px) {
+  .more-details__call-text-question {
+    text-align: left;
+  }
+
+  .more-details__call-text-security {
+    text-align: left;
   }
 }

@@ -107,10 +107,6 @@
   opacity: 1;
 }
 
-.programs__btn:focus ~ .programs__info-slider .programs__label {
-  outline: 1px solid $color-black;
-}
-
 .programs__label--checked::after {
   position: absolute;
   content: "";
@@ -156,7 +152,7 @@
   }
 }
 
-@media (max-width: 1145px) {
+@media (max-width: $mobile-width) {
   .programs {
     background-size: 320px auto;
     background-position: right 135px;
