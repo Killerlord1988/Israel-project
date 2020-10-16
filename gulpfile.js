@@ -39,6 +39,7 @@ gulp.task("script-min", function() {
     "source/js/lib/dragscroll.js",
     "source/js/lib/svg4everybody.js",
     "source/js/lib/jquery.maskedinput.js",
+    "source/js/lib/device.js",
     "source/js/scrolldown.js",
     "source/js/tabs.js",
     "source/js/slider.js",

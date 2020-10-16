@@ -1,6 +1,12 @@
 'use strict';
-$(window).on('load resize', function () {
-  if ($(window).width() <= 1006) {
+// подключение слайдера в секции Жизнь в Израиле
+var responsive = {
+  mobile: 1023,
+  desktop: 1006,
+}
+
+function activateSlick(responsive) {
+  if ($(window).width() <= responsive) {
     $('.about-life__slider').slick({
       dots: true,
       infinite: true,
@@ -12,8 +18,19 @@ $(window).on('load resize', function () {
   } else {
     $('.about-life__slider').filter('.slick-initialized').slick('unslick');
   }
+}
+
+$(window).on('load resize', function () {
+  if (device.desktop()) {
+    activateSlick(responsive.desktop)
+  };
+
+  if (device.mobile()) {
+    activateSlick(responsive.mobile)
+  };
 });
 
+// подключение слайдера в секции Отзывы
 $(window).on('load', function () {
   $('.review__slider').slick({
     dots: false,
